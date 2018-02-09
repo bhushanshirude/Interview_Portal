@@ -1,0 +1,18 @@
+<div class="col-sm-12">
+    <table class="table table-striped">
+        <thead class="menu">
+            <tr>
+                <th>Test</th>
+                <th>No of Questions</th>
+                <th></th>
+            </tr><br>
+        </thead>
+        <tbody>
+            <tr ng-repeat="type in tests">
+                <td>{{ type.name }}</td>
+                <td>{{type.questions.length}}</td><br>
+                <td><a href="#!StartTest/{{ type._id}}" class="btn btn-success">Start Test</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
