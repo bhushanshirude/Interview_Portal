@@ -1,0 +1,17 @@
+<br><br><br><br>
+<div class='card'>
+    <div class="card-header">
+        <h3>Interview Test</h3>
+    </div>
+    <div class="card-body" id="mainPart">
+       <b>{{queno+1}}. {{questionData.questions[queno].questionText }}</b>
+        <p ng-repeat="options in questionData.questions[queno].options">
+            <input type="radio" name="options" value="{{ options }}" ng-click="saveOption($index)"> {{ options }}<br>
+        </p>
+    </div>
+    <div class="card-footer" id='btnpart'>
+        <button class="btn btn-primary" ng-click="nextQuestion()" id='btn-next'>Next</button>
+        <button class="btn btn-danger" ng-click="endTest()" id="btn-end" disabled>End</button>
+    </div>
+</div><br>
+<!-- {{questionData.questions[queno].options}} -->

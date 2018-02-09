@@ -1,0 +1,32 @@
+<!Doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>Interview Portal</title>
+    <link rel="stylesheet" href="css/Bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ui-router.min.js"></script>
+    <script src="Controller/controller.js"></script>
+    <script src="Factory/factory.js"></script>
+    <script src="Routes/route.js"></script>
+</head>
+<header class="header-wrap">
+	<h1>My Interview portal</h1>
+</header>
+
+<body>
+	<div class="container">
+		<!-- {{50+50}} -->
+		<div ui-view></div>
+        
+	</div>
+</body>
+<footer class="fixed-bottom">
+	<h3>Interview Test</h3>
+</footer>
+
+</html>
